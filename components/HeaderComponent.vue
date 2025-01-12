@@ -1,14 +1,14 @@
 <template>
-  <header>
+  <!-- <header>
     <img class="logo" src="@/assets/Books.svg" alt="Books" />
     <nuxt-link class="login-button" to="/auth">
       <BaseButton title="Войти"></BaseButton>
     </nuxt-link>
-  </header>
+  </header> -->
 </template>
 
 <style>
-.login-button {
+/* .login-button {
   margin-left: 1550px;
   margin-top: 20px;
 }
@@ -22,5 +22,5 @@ header {
 }
 .logo {
   margin: 20px 0 20px 60px;
-}
+} */
 </style>

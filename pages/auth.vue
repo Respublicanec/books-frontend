@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <HeaderComponent />
     <div class="login-container">
       <h1>Вход</h1>
       <input placeholder="Логин" class="login-input" type="text" />
