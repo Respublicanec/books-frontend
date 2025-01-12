@@ -1,32 +1,39 @@
 <template>
-  <button
-    :style="{
-      backgroundColor: backgroundColor,
-      border: border,
-    }"
-  >
-    {{ title }}
-  </button>
+  <div>
+    <button :class="varian">
+      <slot>{{ title }}</slot>
+    </button>
+  </div>
 </template>
-
 <script setup>
 defineProps({
+  varian: {
+    type: String,
+    default: "no-backgroud",
+  },
   title: {
     type: String,
   },
-  backgroundColor: {
-    type: String,
-    default: "transparent",
-  },
-  border: {
-    type: String,
-    default: "none",
-  },
 });
 </script>
-
 <style>
-button:hover {
-  color: #9bb2ca;
+.no-backgroud {
+  color: #1849db;
+  background-color: transparent;
+  border: none;
+}
+.no-backgroud:hover {
+  color: #826eb4;
+}
+.brown {
+  color: white;
+  background-color: #696969;
+  border-radius: 40px;
+  height: 40px;
+  width: 100px;
+}
+.brown:hover {
+  color: white;
+  background-color: #928e8e;
 }
 </style>

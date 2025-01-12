@@ -4,7 +4,7 @@
       <h1>Вход</h1>
       <input placeholder="Логин" class="login-input" type="text" />
       <input placeholder="Пароль" class="login-input" type="text" />
-      <BaseButton class="base-button" backgroundColor="#696969" title="Войти" />
+      <BaseButton class="base-button" varian="brown" title="Войти" />
     </div>
   </div>
 </template>
@@ -32,10 +32,6 @@
   border-radius: 3px;
 }
 .base-button {
-  height: 40px;
-  color: white;
-  border-radius: 40px;
-  width: 100px;
-  margin: 40px 0 0 60px;
+  margin: 40px 0 0 10px;
 }
 </style>
