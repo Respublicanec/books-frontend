@@ -1,38 +1,40 @@
 <template>
   <div>
-    <button :class="varian">
-      <slot>{{ title }}</slot>
+    <button :class="variant">
+      <slot></slot>
     </button>
   </div>
 </template>
+
 <script setup>
 defineProps({
-  varian: {
+  variant: {
     type: String,
-    default: "no-backgroud",
-  },
-  title: {
-    type: String,
+    default: "flat",
+    validator: (value) => {
+      return ["flat", "text"].includes(value);
+    },
   },
 });
 </script>
-<style>
-.no-backgroud {
+
+<style scoped>
+.text {
   color: #1849db;
   background-color: transparent;
   border: none;
 }
-.no-backgroud:hover {
+.text:hover {
   color: #826eb4;
 }
-.brown {
+.flat {
   color: white;
   background-color: #696969;
   border-radius: 40px;
   height: 40px;
   width: 100px;
 }
-.brown:hover {
+.flat:hover {
   color: white;
   background-color: #928e8e;
 }

@@ -4,7 +4,7 @@
       <h1>Вход</h1>
       <input placeholder="Логин" class="login-input" type="text" />
       <input placeholder="Пароль" class="login-input" type="text" />
-      <BaseButton class="base-button" varian="brown" title="Войти" />
+      <BaseButton class="base-button">Войти</BaseButton>
     </div>
   </div>
 </template>

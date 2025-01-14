@@ -1,14 +1,20 @@
 <template>
   <div>
     <header class="layout-header">
-      <img class="logo" src="@/assets/image/Books.svg" alt="Books" />
-      <BaseButton
-        @click="transitionLogin"
-        class="login-button"
-        varian="no-backgroud"
-        title="Войти"
+      <img
+        @click="router.push('/')"
+        class="logo"
+        src="@/assets/image/Books.svg"
+        alt="Books"
       />
+      <BaseButton
+        @click="router.push('/auth')"
+        class="login-button"
+        variant="text"
+        >Войти</BaseButton
+      >
     </header>
+
     <main>
       <NuxtPage />
     </main>
@@ -17,22 +23,18 @@
 
 <script setup>
 const router = useRouter();
-
-const transitionLogin = () => {
-  router.push("/auth");
-};
 </script>
 
-<style>
+<style scoped>
 .login-button {
-  margin-left: 1550px;
-  margin-top: 20px;
+  margin: 25px 50px 0 0;
 }
 
 .layout-header {
   display: flex;
-  border: 1px solid rgb(41, 181, 223);
-  width: 1920px;
+  justify-content: space-between;
+  border: 1px solid #3dacd5;
+  width: 100%;
   height: 70px;
   margin: -1px 0 0 -1px;
 }
