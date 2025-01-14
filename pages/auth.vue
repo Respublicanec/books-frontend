@@ -12,7 +12,10 @@
         class="login-input"
         type="text"
       >
-      <BaseButton class="base-button">
+      <BaseButton
+        class="base-button"
+        variant="flat"
+      >
         Войти
       </BaseButton>
     </div>

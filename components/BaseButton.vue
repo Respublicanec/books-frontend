@@ -1,6 +1,17 @@
 <template>
   <div>
-    <button :class="variant">
+    <router-link
+      v-if="to"
+      :class="variant"
+      :to="to"
+    >
+      <slot />
+    </router-link>
+    <button
+      v-else
+      :class="variant"
+      @click="click"
+    >
       <slot />
     </button>
   </div>
@@ -14,6 +25,14 @@ defineProps({
     validator: (value) => {
       return ['flat', 'text'].includes(value)
     },
+  },
+
+  to: {
+    type: String,
+  },
+
+  click: {
+    type: String,
   },
 })
 </script>

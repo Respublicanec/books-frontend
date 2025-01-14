@@ -12,11 +12,11 @@
       <BaseButton
         class="login-button"
         variant="text"
+        to="/auth"
       >
-        <a href="/auth">Войти</a>
+        Войти
       </BaseButton>
     </header>
-
     <main>
       <NuxtPage />
     </main>
