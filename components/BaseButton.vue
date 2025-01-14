@@ -1,7 +1,7 @@
 <template>
   <div>
     <button :class="variant">
-      <slot></slot>
+      <slot />
     </button>
   </div>
 </template>
@@ -10,12 +10,12 @@
 defineProps({
   variant: {
     type: String,
-    default: "flat",
+    default: 'flat',
     validator: (value) => {
-      return ["flat", "text"].includes(value);
+      return ['flat', 'text'].includes(value)
     },
   },
-});
+})
 </script>
 
 <style scoped>

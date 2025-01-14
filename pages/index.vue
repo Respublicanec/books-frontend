@@ -1,3 +1,5 @@
 <template>
-  <BaseButton class="base-button">Тестовая</BaseButton>
+  <BaseButton class="base-button">
+    Тестовая
+  </BaseButton>
 </template>

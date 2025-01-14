@@ -17,6 +17,7 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "eslint": "^9.18.0",
     "sass-embedded": "^1.83.1"
   }
 }

@@ -2,9 +2,19 @@
   <div class="container">
     <div class="login-container">
       <h1>Вход</h1>
-      <input placeholder="Логин" class="login-input" type="text" />
-      <input placeholder="Пароль" class="login-input" type="text" />
-      <BaseButton class="base-button">Войти</BaseButton>
+      <input
+        placeholder="Логин"
+        class="login-input"
+        type="text"
+      >
+      <input
+        placeholder="Пароль"
+        class="login-input"
+        type="text"
+      >
+      <BaseButton class="base-button">
+        Войти
+      </BaseButton>
     </div>
   </div>
 </template>

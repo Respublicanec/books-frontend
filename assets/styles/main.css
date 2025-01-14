@@ -1,11 +1,15 @@
 body {
   border: 1px solid rgb(41, 181, 223);
-  height: 100%;
-  min-height: 800px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
   width: 100%;
   max-width: 1500px;
-  margin: 20px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  height: 100%;
+  min-height: 800px;
+}
+html {
+  display: flex;
+  justify-content: center;
+
+ 
 }

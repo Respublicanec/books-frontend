@@ -1,18 +1,20 @@
 <template>
   <div>
     <header class="layout-header">
-      <img
-        @click="router.push('/')"
-        class="logo"
-        src="@/assets/image/Books.svg"
-        alt="Books"
-      />
+      <a href="/">
+        <img
+          class="logo"
+          src="@/assets/image/Books.svg"
+          alt="Books"
+          @click="router.push('/')"
+        >
+      </a>
       <BaseButton
-        @click="router.push('/auth')"
         class="login-button"
         variant="text"
-        >Войти</BaseButton
       >
+        <a href="/auth">Войти</a>
+      </BaseButton>
     </header>
 
     <main>
@@ -22,7 +24,7 @@
 </template>
 
 <script setup>
-const router = useRouter();
+const router = useRouter()
 </script>
 
 <style scoped>
