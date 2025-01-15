@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  min-height: 800px;
+}
+html {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}

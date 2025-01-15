@@ -1,9 +1,8 @@
 <template>
-  <div>Hello!</div>
+  <BaseButton
+    variant="flat"
+    to="/auth"
+  >
+    Тестовая
+  </BaseButton>
 </template>
-
-<script>
-export default {
-  name: "IndexPage",
-};
-</script>
