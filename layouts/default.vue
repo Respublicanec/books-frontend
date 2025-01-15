@@ -26,6 +26,7 @@
 .layout-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0 30px 0;
   width: 100%;
   height: 100%;
