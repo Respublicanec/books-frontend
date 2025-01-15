@@ -23,18 +23,12 @@
 </template>
 
 <style scoped>
-.login-button {
-  margin: 25px 50px 0 0;
-}
-
 .layout-header {
   display: flex;
   justify-content: space-between;
+  padding: 20px ;
   width: 100%;
-  height: 70px;
-  margin: -1px 0 0 -1px;
-}
-.logo {
-  margin: 20px 0 20px 60px;
+  height: 100%;
+  max-height: 50px;
 }
 </style>
