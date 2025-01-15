@@ -1,16 +1,15 @@
 <template>
   <div>
-    <router-link
+    <nuxt-link
       v-if="to"
       :class="variant"
       :to="to"
     >
       <slot />
-    </router-link>
+    </nuxt-link>
     <button
       v-else
       :class="variant"
-      @click="click"
     >
       <slot />
     </button>
@@ -26,12 +25,7 @@ defineProps({
       return ['flat', 'text'].includes(value)
     },
   },
-
   to: {
-    type: String,
-  },
-
-  click: {
     type: String,
   },
 })
@@ -42,6 +36,7 @@ defineProps({
   color: #1849db;
   background-color: transparent;
   border: none;
+  text-decoration: none;
 }
 .text:hover {
   color: #826eb4;
@@ -50,8 +45,10 @@ defineProps({
   color: white;
   background-color: #696969;
   border-radius: 40px;
-  height: 40px;
+  height: 50px;
   width: 100px;
+  padding: 15px;
+  text-decoration: none;
 }
 .flat:hover {
   color: white;

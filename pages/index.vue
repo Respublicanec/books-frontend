@@ -1,12 +1,8 @@
 <template>
   <BaseButton
     variant="flat"
-    @click="router.push('/auth')"
+    to="/auth"
   >
     Тестовая
   </BaseButton>
 </template>
-
-<script setup>
-const router = useRouter()
-</script>

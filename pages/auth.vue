@@ -22,8 +22,6 @@
   </div>
 </template>
 
-<script setup></script>
-
 <style>
 .container {
   display: flex;
